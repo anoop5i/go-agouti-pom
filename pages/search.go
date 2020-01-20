@@ -14,7 +14,9 @@ type SearchPage struct {
 Search page initialization
 */
 func Search(page *agouti.Page) *SearchPage {
-	search := SearchPage{SearchInput: page.FindByName("q"), SButton: page.Find("asf")}
+	search := SearchPage{
+		SearchInput: page.FindByName("q"),
+		SButton:     page.Find("asf")}
 	return &search
 }
 
