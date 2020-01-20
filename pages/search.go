@@ -17,3 +17,10 @@ func Search(page *agouti.Page) *SearchPage {
 	search := SearchPage{SearchInput: page.FindByName("q"), SButton: page.Find("asf")}
 	return &search
 }
+
+/*
+SearchWith text method
+*/
+func (s *SearchPage) SearchWith(text string) {
+	s.SearchInput.SendKeys(text + "\uE007")
+}

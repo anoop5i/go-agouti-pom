@@ -1,11 +1,10 @@
 package main
 
 import (
-	"log"
-	"test/agouti/pages"
-	"time"
-
+	"github.com/anoopsivarajan/go-agouti-pom/pages"
 	"github.com/sclevine/agouti"
+	"log"
+	"time"
 )
 
 func main() {
@@ -30,7 +29,7 @@ func main() {
 
 	se := pages.Search(page)
 
-	se.SearchInput.SendKeys("Golang" + "\uE007")
+	se.SearchWith("Golang")
 
 	// all := page.AllByXPath("//h3")
 	// elements, err := all.Selection.Elements()

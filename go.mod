@@ -1,4 +1,4 @@
-module test/agouti
+module github.com/anoopsivarajan/go-agouti-pom
 
 go 1.13
 
